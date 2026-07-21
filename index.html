@@ -1,145 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manish Khadka | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h1 align="center">My Portfolio</h1>
-    <hr>
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <h1 class="logo">Manish Khadka</h1>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <a href="#about">About</a> |
-    <a href="#skills">Skills</a> |
-    <a href="#projects">Projects</a> |
-    <a href="#education">Education</a> |
-    <a href="#contact">Contact</a>
+  <!-- Main Content Wrapper -->
+  <main class="content-wrapper">
 
-    <hr>
+    <!-- About Section -->
+    <section id="about" class="card-section bio-card">
+      <div class="profile-frame">
+        <img src="profile.jpg" alt="Manish Khadka Profile Picture" class="profile-img">
+      </div>
+      <div class="bio-text">
+        <h2>About Me</h2>
+        <p>
+          Hello! My name is <strong>Manish Khadka</strong>. I am a student interested in Web Development, 
+          Systems Administration, Programming, and Cloud Computing. I enjoy learning new technologies, 
+          working with Linux environments, and building clean web applications.
+        </p>
+      </div>
+    </section>
 
-    <h2 id="about">About Me</h2>
-
-    <center>
-        <img src="profile.jpg" width="150" height="150" alt="Manish Khadka Profile Picture">
-    </center>
-    <p>
-        Hello! My name is <b>Manish Khadka</b>.
-        I am a student who is interested in Web Development,
-        Programming, and Cloud Computing.
-        I enjoy learning new technologies and building simple websites.
-    </p>
-
-    <hr>
-
-    <h2 id="skills">Skills</h2>
-
-    <ul>
-        <li>HTML</li>
-        <li>C Programming</li>
+    <!-- Skills Section -->
+    <section id="skills" class="card-section">
+      <h2>Technical Skills</h2>
+      <ul class="skills-grid">
+        <li>HTML5 &amp; CSS3</li>
+        <li>C / C++</li>
         <li>Python</li>
         <li>Java</li>
         <li>AWS Basics</li>
-        <li>Database (SQL)</li>
-    </ul>
+        <li>SQL &amp; Databases</li>
+        <li>Linux Administration</li>
+      </ul>
+    </section>
 
-    <hr>
+    <!-- Projects Section -->
+    <section id="projects" class="card-section">
+      <h2>Featured Projects</h2>
+      <div class="table-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Project Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Student Management System</strong></td>
+              <td>A simple C program to manage and store student records efficiently.</td>
+            </tr>
+            <tr>
+              <td><strong>Portfolio Website</strong></td>
+              <td>A modern personal portfolio built using semantic HTML5 and responsive CSS3.</td>
+            </tr>
+            <tr>
+              <td><strong>Calculator App</strong></td>
+              <td>A basic CLI calculator performing mathematical operations in C.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-    <h2 id="projects">Projects</h2>
+    <!-- Education Section -->
+    <section id="education" class="card-section">
+      <h2>Education History</h2>
+      <div class="table-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Level</th>
+              <th>Institution</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Bachelor's Degree</strong></td>
+              <td>Your College Name</td>
+              <td>2024 &ndash; Present</td>
+            </tr>
+            <tr>
+              <td><strong>High School</strong></td>
+              <td>Your School Name</td>
+              <td>2022</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-    <table border="1" cellpadding="8">
-        <tr>
-            <th>Project Name</th>
-            <th>Description</th>
-        </tr>
+    <!-- Contact Section -->
+    <section id="contact" class="card-section">
+      <h2>Get In Touch</h2>
+      <div class="contact-grid">
+        
+        <!-- Contact Form -->
+        <form class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
 
-        <tr>
-            <td>Student Management System</td>
-            <td>A simple C program to manage student records.</td>
-        </tr>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
 
-        <tr>
-            <td>Portfolio Website</td>
-            <td>A personal portfolio created using HTML.</td>
-        </tr>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
 
-        <tr>
-            <td>Calculator</td>
-            <td>Basic calculator using C programming.</td>
-        </tr>
-    </table>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
 
-    <hr>
+        <!-- Direct Contact Details -->
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+          <p><strong>Email:</strong> manish@example.com</p>
+          <p><strong>Phone:</strong> +977-98XXXXXXXX</p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/" target="_blank" rel="noopener">github.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin.com</a></p>
+        </div>
 
-    <h2 id="education">Education</h2>
+      </div>
+    </section>
 
-    <table border="1" cellpadding="8">
-        <tr>
-            <th>Level</th>
-            <th>Institution</th>
-            <th>Year</th>
-        </tr>
+  </main>
 
-        <tr>
-            <td>Bachelor</td>
-            <td>Your College Name</td>
-            <td>2024 - Present</td>
-        </tr>
-
-        <tr>
-            <td>High School</td>
-            <td>Your School Name</td>
-            <td>2022</td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <h2 id="contact">Contact Me</h2>
-
-    <form>
-
-        <label>Name:</label><br>
-        <input type="text" placeholder="Enter your name"><br><br>
-
-        <label>Email:</label><br>
-        <input type="email" placeholder="Enter your email"><br><br>
-
-        <label>Message:</label><br>
-        <textarea rows="5" cols="40"></textarea><br><br>
-
-        <input type="submit" value="Send">
-
-    </form>
-
-    <hr>
-
-    <h3>Contact Information</h3>
-
-    <p>
-        Email: manish@example.com
-    </p>
-
-    <p>
-        Phone: +977-98XXXXXXXX
-    </p>
-
-    <p>
-        GitHub:
-        <a href="https://github.com/">https://github.com/</a>
-    </p>
-
-    <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/">https://www.linkedin.com/</a>
-    </p>
-
-    <hr>
-
-    <footer>
-        <p align="center">
-            &copy; 2026 Manish Khadka. All Rights Reserved.
-        </p>
-    </footer>
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Manish Khadka. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
